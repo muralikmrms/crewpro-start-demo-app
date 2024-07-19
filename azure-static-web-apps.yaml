@@ -1,4 +1,4 @@
 app_location: "/"
 api_location: ""
-output_location: "dist/crewpro-start-demo-app"
+output_location: "dist/crewpro-start-demo-app/browser"
 node_version: "20"
