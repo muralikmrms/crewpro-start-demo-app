@@ -1,0 +1,7 @@
+<div class="assignee-container">
+  <h2>Assignees</h2>
+  <div *ngIf="error" class="error">{{ error }}</div>
+  <ul class="assignee-list">
+    <li *ngFor="let assignee of assignees">{{ assignee.name }}</li>
+  </ul>
+</div>

@@ -1,0 +1,7 @@
+<div class="employee-container">
+  <h2>Employees</h2>
+  <div *ngIf="error" class="error">{{ error }}</div>
+  <ul class="employee-list">
+    <li *ngFor="let employee of employees">{{ employee.name }}</li>
+  </ul>
+</div>
