@@ -19,11 +19,17 @@ jobs:
         with:
           submodules: true
           lfs: false
+
       # Setup Node.js environment
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
           node-version: "20" # Specify the Node.js version required by Angular CLI
+          cache: "npm" # Cache npm dependencies
+
+        # Clear npm cache
+      - name: Clear npm cache
+        run: npm cache clean --force
 
       # Install dependencies
       - name: Install dependencies
